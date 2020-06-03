@@ -222,23 +222,28 @@ hr {
 }
 
 .headerRow .firstNameContainer {
-    text-align: center;
+    text-align: left;
+    padding-left: 1%;
 }
 
 .headerRow .lastNameContainer {
-    text-align: center;
+    text-align: left;
+    padding-left: 1%;
 }
 
 .headerRow .emailContainer {
-    text-align: center;
+    text-align: left;
+    padding-left: 1%;
 }
 
 .headerRow .phoneNoContainer {
-    text-align: center;
+    text-align: left;
+    padding-left: 1%;
 }
 
 .headerRow .deptNameContainer {
-    text-align: center;
+    text-align: left;
+    padding-left: 1%;
 }
 
 .s_bodyRow {
