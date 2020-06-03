@@ -20,39 +20,23 @@
 /* For Small devices */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .data_row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    .btnAddEmployeeRow {
-        background-color: #c30;
-        color: #fff!important;
-        border: none;
-        line-height: 35px;
-        /* padding: 0 20px; */
-        border-radius: 3px;
-    }
-    .employeeContainer {
+    .headerRow {
         display: none;
+    }
+    .s_bodyRow {
+        padding: 2%;
+        line-height: 55px;
+        font-size: 13.6px;
+        border-bottom: 1px dashed #cdcdcd;
+    }
+    .s_bodyRow .actionsContainer {
+        text-align: left;
+    }
+    .s_bodyRow .addEmployeeContainer {
+        text-align: left;
     }
     .s_bodyHeader {
         display: block;
-    }
-    .actionsContainer {
-        text-align: center;
-        width: 3%;
-        margin-left: 7px;
-    }
-    .addEmployeeContainer {
-        text-align: center;
-        width: 12%;
-        margin-left: 7px;
-        padding: 1px;
-    }
-    .actionsRowContainer {
-        text-align: center;
-        width: 12%;
-        padding: 1px;
     }
 }
 
@@ -60,39 +44,30 @@
 /* For Extra Small devices */
 
 @media (max-width: 767px) {
-    .data_row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    .btnAddEmployeeRow {
-        background-color: #c30;
-        color: #fff!important;
-        border: none;
-        line-height: 35px;
-        /* padding: 0 20px; */
-        border-radius: 3px;
-    }
-    .employeeContainer {
+    .headerRow {
         display: none;
+    }
+    .s_bodyRow {
+        padding: 2%;
+        line-height: 55px;
+        font-size: 13.6px;
+        border-bottom: 1px dashed #cdcdcd;
+    }
+    .s_bodyRow .actionsContainer {
+        text-align: left;
+    }
+    .s_bodyRow .addEmployeeContainer {
+        text-align: left;
+    }
+    .account-img {
+        height: 27px;
+        width: 26px;
+        border-radius: 50%;
+        margin-top: 12px;
+        margin-left: 3%;
     }
     .s_bodyHeader {
         display: block;
-    }
-    .actionsContainer {
-        text-align: center;
-        width: 3%;
-        margin-left: 7px;
-    }
-    .addEmployeeContainer {
-        text-align: center;
-        width: 12%;
-        margin-left: 7px;
-        padding: 1px;
-    }
-    .actionsRowContainer {
-        text-align: center;
-        width: 12%;
-        padding: 1px;
     }
 }
 
@@ -116,10 +91,6 @@
     .headerRow {
         display: none;
     }
-    /* .data_row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
     .input-group {
         position: relative;
         display: table;
@@ -138,28 +109,22 @@
         margin-top: 12px;
         margin-left: 3%;
     }
-    .employeeContainer {
-        display: none;
+    .s_bodyRow {
+        padding: 5%;
+        margin: -2%;
+        line-height: 55px;
+        font-size: 13.6px;
+        border-bottom: 1px dashed #cdcdcd;
+    }
+    .s_bodyRow .actionsContainer {
+        text-align: left;
+    }
+    .s_bodyRow .addEmployeeContainer {
+        text-align: left;
     }
     .s_bodyHeader {
         display: block;
     }
-    .actionsContainer {
-        text-align: center;
-        width: 3%;
-        margin-left: 7px;
-    }
-    .addEmployeeContainer {
-        text-align: center;
-        width: 12%;
-        margin-left: 7px;
-        padding: 1px;
-    }
-    .actionsRowContainer {
-        text-align: center;
-        width: 25%;
-        padding: 1px;
-    } */
 }
 
 
@@ -179,9 +144,8 @@
     .dropDownButton:focus {
         width: 100%;
     }
-    .data_row {
-        margin-right: -15px;
-        margin-left: -15px;
+    .headerRow {
+        display: none;
     }
     .input-group {
         position: relative;
@@ -201,26 +165,20 @@
         margin-top: 12px;
         margin-left: 3%;
     }
-    .employeeContainer {
-        display: none;
+    .s_bodyRow {
+        padding: 5%;
+        margin: -2%;
+        line-height: 55px;
+        font-size: 13.6px;
+        border-bottom: 1px dashed #cdcdcd;
+    }
+    .s_bodyRow .actionsContainer {
+        text-align: left;
+    }
+    .s_bodyRow .addEmployeeContainer {
+        text-align: left;
     }
     .s_bodyHeader {
         display: block;
-    }
-    .actionsContainer {
-        text-align: center;
-        width: 3%;
-        margin-left: 7px;
-    }
-    .addEmployeeContainer {
-        text-align: center;
-        width: 12%;
-        margin-left: 7px;
-        padding: 1px;
-    }
-    .actionsRowContainer {
-        text-align: center;
-        width: 25%;
-        padding: 1px;
     }
 }

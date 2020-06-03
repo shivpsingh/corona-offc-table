@@ -205,55 +205,35 @@ hr {
 
 /* Code */
 
-.employeeContainer .headerRow .firstNameContainer {
-    width: 22%;
-    max-width: 22%;
-    text-align: center;
-}
-
-.s_headerRow {
-    display: flex;
-}
-
 .s_headerRow {
     line-height: 35px;
     font-size: 13.6px;
     border-bottom: 1px solid #cdcdcd;
+    text-align: left;
+}
+
+.headerRow .actionsContainer {
+    text-align: left;
+}
+
+.headerRow .addEmployeeContainer {
+    text-align: left;
 }
 
 .headerRow .firstNameContainer {
     text-align: left;
-    padding-left: 1%;
-}
-
-.headerRow .lastNameContainer {
-    text-align: left;
-    padding-left: 1%;
 }
 
 .headerRow .emailContainer {
     text-align: left;
-    padding-left: 1%;
 }
 
 .headerRow .phoneNoContainer {
     text-align: left;
-    padding-left: 1%;
 }
 
 .headerRow .deptNameContainer {
     text-align: left;
-    padding-left: 1%;
-}
-
-.s_bodyRow {
-    display: flex;
-}
-
-.s_bodyRow {
-    line-height: 55px;
-    font-size: 13.6px;
-    border-bottom: 1px dashed #cdcdcd;
 }
 
 .s_bodyRow .textbox {
@@ -273,14 +253,6 @@ hr {
     border-radius: 3px;
 }
 
-.s_bodyRow .textbox {
-    width: 100%;
-    line-height: 32px;
-    border: 1px solid #cdcdcd;
-    padding: 0 5px;
-    border-radius: 3px;
-}
-
 .employee.employee_0 {
     background-color: #abf2ab;
     -webkit-transition: all 1s ease;
@@ -291,54 +263,41 @@ hr {
 }
 
 .s_bodyRow {
-    display: flex;
-}
-
-.s_bodyRow {
+    /* display: flex; */
     line-height: 55px;
     font-size: 13.6px;
     border-bottom: 1px dashed #cdcdcd;
 }
 
-.employeeContainer .bodyRow>div {
-    width: 14%;
-    max-width: 14%;
-}
-
-.s_headerRow div,
-.s_bodyRow div {
-    padding: 0 5px;
-}
-
 .s_bodyHeader {
     display: none;
-}
-
-.s_bodyHeader {
     color: #333;
     line-height: 13.6px;
     margin-top: 10px;
 }
 
-.s_headerRow {
-    text-align: left;
+.s_bodyRow .actionsContainer {
+    text-align: center;
 }
 
-.actionsContainer {
+.s_bodyRow .addEmployeeContainer {
     text-align: center;
-    width: 3%;
 }
 
-.actionsRowContainer {
+.s_bodyRow .firstNameContainer {
     text-align: center;
-    /* width: 12%; */
-    padding: 1px;
 }
 
-.addEmployeeContainer {
+.s_bodyRow .emailContainer {
     text-align: center;
-    /* width: 13%; */
-    padding: 1px;
+}
+
+.s_bodyRow .phoneNoContainer {
+    text-align: center;
+}
+
+.s_bodyRow .deptNameContainer {
+    text-align: center;
 }
 
 .fa {
@@ -348,35 +307,11 @@ hr {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-i {
-    cursor: pointer;
 }
 
 .employeeContainer .bodyRow .actionsContainer .fa-trash-o {
     cursor: pointer;
     font-size: 15px;
-}
-
-.s_headerRow,
-.s_headerRow *,
-.s_bodyRow,
-.s_bodyRow * {
-    color: #999;
-}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-i {
-    cursor: pointer;
 }
 
 .dropDownButton {
@@ -393,7 +328,6 @@ i {
 .dropDownButton:hover {
     color: white;
     border-radius: 50px;
-    /* padding: 12px 57px; */
     margin-top: -5px;
     background-color: #2979ff;
     text-align: center;
@@ -435,17 +369,7 @@ a:not([href]):not([tabindex]) {
     display: inline-block;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-}
-
 .data_row {
     margin-right: 0px;
     margin-left: 0px;
-}
-
-#schedule-panel-container {
-    width: 90%;
 }
