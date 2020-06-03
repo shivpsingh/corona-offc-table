@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Office Planner</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Responsice CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.mob.css">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js "></script>
+
+    <!-- Custom Script -->
+    <script type="text/javascript " src="js/script.js "></script>
+
+
+</head>
+
+<body>
+
+    <section id="navigation-bar">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="nav-elem-border">
+                            <a href="#home">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#help">Help</a>
+                    </li>
+                    <li>
+                        <img class="account-img" src="images/avatar.jpg ">
+                    </li>
+                    <li>
+                        <a href="#account">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Panel Section -->
+    <section id="panel-section">
+        <div class="tab-content">
+            <!-- Schedule Part -->
+            <div id="schedule" class="tab-pane fade in active">
+                <div class="container-fluid">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 col-xs-12"></div>
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <div class="dropdown show dropDownButton">
+                                        <a class="dropdown-toggle white addEmployeeMainButton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <b>Add Employee</b>
+                                        </a>
+                                        <div class="dropdown-menu dropDownButtonOptions" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <div class="option addEmployeeOption1">
+                                                    <i class="fa fa-user-plus addEmployeeOption" aria-hidden="true"></i> Add Employee
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option callImportFromExcel" data-toggle="modal" data-target="#importFromExcel">
+                                                    <i class="fa fa-file-excel-o addEmployeeOption" aria-hidden="true"></i> Import from Excel
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="s_headerRow headerRow">
+                            <div class="col-xl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 actionsContainer"></div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 firstNameContainer"><b>First Name</b><span class="req"> *</span></div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 lastNameContainer"><b>Last Name</b><span class="req"> *</span></div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 emailContainer"><b>Email</b><span class="req"> *</span></div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 phoneNoContainer"><b>Phone No</b><span class="req"> *</span></div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 deptNameContainer"><b>Department</b><span class="req"> *</span></div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12 addEmployeeContainer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" s_bodyRow bodyRow employee employee_0 hide">
+                            <div class="col-xl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 actionsContainer">
+                                <i class="fa fa-close hideAddEmployeeRow" aria-hidden="true" data-placement="top" data-toggle="tooltip" title="" onclick="$(this).closest('.employee').addClass('hide')" data-original-title="Hide Row"></i>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                <div class="s_bodyHeader">First Name</div>
+                                <div class="firstNameContainer"><input type="text" class="textbox firstName firstName_0" value="" placeholder="First Name" data-url="/Service/Step1/UpdateFirstName"></div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                <div class="s_bodyHeader">Last Name</div>
+                                <div class="lastNameContainer"><input type="text" class="textbox lastName lastName_0" value="" placeholder="Last Name" data-url="/Service/Step1/UpdateLastName"></div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                <div class="s_bodyHeader">Email</div>
+                                <div class="emailContainer"><input type="email" class="textbox email email_0" value="" placeholder="Email" data-url="/Service/Step1/UpdateLastName"></div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                <div class="s_bodyHeader">Phone No</div>
+                                <div class="phoneNoContainer"><input type="text" class="textbox email phone_0" value="" placeholder="Phone No" data-url="/Service/Step1/UpdateLastName"></div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                <div class="s_bodyHeader">Department</div>
+                                <div class="deptNameContainer"><input type="text" class="textbox department department_0" value="" placeholder="Department" data-url="/Service/Step1/UpdateLastName"></div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12 addEmployeeContainer">
+                                <input class="btnAddEmployeeRow" type="button" value="Add Employee" data-url="/Service/Step1/SubmitAddEmployeeRow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
