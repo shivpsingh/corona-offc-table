@@ -122,7 +122,7 @@ $(document).on('click', '.btnAddEmployeeRow', function() {
         </div>
         `
 
-        $.post(url, { FirstName: firstName, LastName: lastName, Email: email, PhoneNo: phoneNo, Department: department }, function() {
+        // $.post(url, { FirstName: firstName, LastName: lastName, Email: email, PhoneNo: phoneNo, Department: department }, function() {
             loading();
             $('.employee_0').after(data);
             $('.firstName_0').val('');
@@ -132,7 +132,7 @@ $(document).on('click', '.btnAddEmployeeRow', function() {
             $('.firstName_0').focus();
             loaded();
             counter += 1;
-        });
+       // });
     }
 });
 
